@@ -5,7 +5,7 @@ package UI;
 public class Energy extends Formula{
     // Lois's part
     float kineticEnergy(float mass, float velocity) {
-        return mass * velocity * velocity;
+        return mass * velocity * velocity ;
     }
 
     // Daniella's part
