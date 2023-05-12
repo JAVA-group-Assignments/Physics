@@ -3,12 +3,12 @@
 package UI;
 
 public class Energy extends Formula{
-    // Daniella's part
+    // Lois's part
     float kineticEnergy(float mass, float velocity) {
         return mass * velocity * velocity;
     }
 
-    // Lois's part
+    // Daniella's part
     float potentialEnergy(float mass, float height) {
         return mass * getGravity() * height;
     }
