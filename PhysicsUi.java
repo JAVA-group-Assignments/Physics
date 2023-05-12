@@ -30,12 +30,12 @@ public class PhysicsUi {
         });
 
         // Lois's part
-        /*kineticEnergy.addActionListener(new ActionListener() {
+        kineticEnergy.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 drawKineticEnergy();
             }
-        });*/
+        });
 
         // Saratu's part
         totalEnergy.addActionListener(new ActionListener() {
