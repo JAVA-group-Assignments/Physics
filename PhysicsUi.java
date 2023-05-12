@@ -22,7 +22,7 @@ public class PhysicsUi {
         frame.getContentPane().setBackground(Color.PINK);
 
         // Daniella's part
-        /*potentialEnergy.addActionListener(new ActionListener() {
+        potentialEnergy.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 drawPotentialEnergy();
@@ -30,7 +30,7 @@ public class PhysicsUi {
         });
 
         // Lois's part
-        kineticEnergy.addActionListener(new ActionListener() {
+        /*kineticEnergy.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 drawKineticEnergy();
@@ -55,7 +55,7 @@ public class PhysicsUi {
     }
 
     // Daniella's part
-   /* JFrame potentialEnergyFrame = new JFrame("Potential Energy");
+    JFrame potentialEnergyFrame = new JFrame("Potential Energy");
     JTextField enterMass = new JTextField("Enter mass");
     JTextField enterHeight = new JTextField("Enter height:");
     JButton calculatePotentialEnergy = new JButton("Calculate potential energy");
@@ -82,7 +82,7 @@ public class PhysicsUi {
 
 
     // Lois's part
-    JFrame kineticEnergyFrame = new JFrame("Kinetic Energy");
+    /*JFrame kineticEnergyFrame = new JFrame("Kinetic Energy");
     JTextField enterMass1 = new JTextField("Enter mass");
     JTextField enterVelocity = new JTextField("Enter velocity:");
     JButton calculateKineticEnergy = new JButton("Calculate kinetic energy");
