@@ -35,7 +35,7 @@ public class PhysicsUi {
             public void actionPerformed(ActionEvent e) {
                 drawKineticEnergy();
             }
-        });
+        });*/
 
         // Saratu's part
         totalEnergy.addActionListener(new ActionListener() {
@@ -43,7 +43,7 @@ public class PhysicsUi {
             public void actionPerformed(ActionEvent e) {
                 drawTotalEnergy();
             }
-        });*/
+        });
 
         // Worthy's part
         gravitationalEnergy.addActionListener(new ActionListener() {
@@ -105,7 +105,7 @@ public class PhysicsUi {
                 JOptionPane.showMessageDialog(null, kineticEnergy1);
             }
         });
-    }
+    }*/
 
     // Saratu's Part
 
@@ -132,7 +132,7 @@ public class PhysicsUi {
                 JOptionPane.showMessageDialog(null, totalEnergy1);
             }
         });
-    }*/
+    }
 
     JFrame gravitationalEnergyFrame = new JFrame("Gravitational Energy");
     JTextField enterMass2 = new JTextField("Enter mass:");
