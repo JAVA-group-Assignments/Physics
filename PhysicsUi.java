@@ -82,7 +82,7 @@ public class PhysicsUi {
 
 
     // Lois's part
-    /*JFrame kineticEnergyFrame = new JFrame("Kinetic Energy");
+    JFrame kineticEnergyFrame = new JFrame("Kinetic Energy");
     JTextField enterMass1 = new JTextField("Enter mass");
     JTextField enterVelocity = new JTextField("Enter velocity:");
     JButton calculateKineticEnergy = new JButton("Calculate kinetic energy");
@@ -105,7 +105,7 @@ public class PhysicsUi {
                 JOptionPane.showMessageDialog(null, kineticEnergy1);
             }
         });
-    }*/
+    }
 
     // Saratu's Part
 
