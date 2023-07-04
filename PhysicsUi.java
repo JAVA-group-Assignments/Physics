@@ -10,14 +10,16 @@ public class PhysicsUi {
     JButton kineticEnergy = new JButton("Kinetic Energy:");
     JButton totalEnergy = new JButton("Total Energy:");
     JButton gravitationalEnergy = new JButton("Gravitational Energy:");
+    JButton workDone = new JButton("Work Done:");
 
     public void mainUI() {
         frame.add(potentialEnergy);
         frame.add(kineticEnergy);
         frame.add(totalEnergy);
         frame.add(gravitationalEnergy);
+        frame.add(workDone);
         frame.setSize(200, 250);
-        frame.setLayout(new GridLayout(3, 1));
+        frame.setLayout(new GridLayout(4, 1));
         frame.setVisible(true);
         frame.getContentPane().setBackground(Color.PINK);
 
@@ -50,6 +52,14 @@ public class PhysicsUi {
             @Override
             public void actionPerformed(ActionEvent e) {
                 drawGravitationalEnergy();
+            }
+        });
+
+        // Eko's part
+        workDone.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                drawWorkDone();
             }
         });
     }
@@ -108,7 +118,6 @@ public class PhysicsUi {
     }
 
     // Saratu's Part
-
     JFrame totalEnergyFrame = new JFrame("Total Energy");
     JTextField enterPotentialEnergy = new JTextField("Enter potential energy");
     JTextField enterKineticEnergy = new JTextField("Enter kinetic energy:");
@@ -155,6 +164,32 @@ public class PhysicsUi {
             public void actionPerformed(ActionEvent e) {
                 float gravitationalEnergy1 = energy.potentialEnergy(Float.parseFloat(enterMass2.getText()), Float.parseFloat(enterHeight1.getText()));
                 JOptionPane.showMessageDialog(null, gravitationalEnergy1);
+            }
+        });
+    }
+
+    // Eko's part
+    JFrame workDoneFrame = new JFrame("Work Done");
+    JTextField enterForce = new JTextField("Enter force");
+    JTextField enterDisplacement = new JTextField("Enter displacement:");
+    JButton calculateWorkDone = new JButton("Calculate work done");
+
+    public void drawWorkDone() {
+        WorkDone work = new WorkDone();
+        workDoneFrame.add(enterForce);
+        workDoneFrame.add(enterDisplacement);
+        workDoneFrame.add(calculateWorkDone);
+        workDoneFrame.setLayout(new GridLayout(2, 1));
+        workDoneFrame.setSize(200, 250);
+        workDoneFrame.setVisible(true);
+
+        frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+
+        calculateWorkDone.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                float workDone1 = work.workDone(Float.parseFloat(enterForce.getText()), Float.parseFloat(enterDisplacement.getText()));
+                JOptionPane.showMessageDialog(null, workDone1);
             }
         });
     }
