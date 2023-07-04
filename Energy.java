@@ -23,4 +23,9 @@ public class Energy extends Formula{
     {
         return mass * getGravity() * height;
     }
+
+    // Eko's part
+    double workDone(double force, double displacement){
+        return force * displacement;
+    }
 }
